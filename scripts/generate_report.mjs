@@ -165,7 +165,7 @@ async function callZhipuAPI(apiKey, model, messages, maxRetries = 3) {
     messages,
     temperature: 0.3,
     top_p: 0.9,
-    max_tokens: 50000,
+    max_tokens: model.includes('5-turbo') ? 16384 : 50000,
   };
 
   for (let attempt = 1; attempt <= maxRetries; attempt++) {
