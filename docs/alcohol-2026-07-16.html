@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Alcohol Addiction Research &middot; 酒癮研究文獻日報 &middot; 2026年7月16日</title>
+<meta name="description" content="2026年7月16日 酒癮研究文獻日報，由 AI 自動彙整 PubMed 最新論文"/>
+<style>
+  :root { --bg: #f6f1e8; --surface: #fffaf2; --line: #d8c5ab; --text: #2b2118; --muted: #766453; --accent: #8c4f2b; --accent-soft: #ead2bf; --card-bg: color-mix(in srgb, var(--surface) 92%, white); }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: radial-gradient(circle at top, #fff6ea 0, var(--bg) 55%, #ead8c6 100%); color: var(--text); font-family: "Noto Sans TC", "PingFang TC", "Helvetica Neue", Arial, sans-serif; min-height: 100vh; overflow-x: hidden; }
+  .container { position: relative; z-index: 1; max-width: 880px; margin: 0 auto; padding: 60px 32px 80px; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 52px; animation: fadeDown 0.6s ease both; }
+  .logo { width: 48px; height: 48px; border-radius: 14px; background: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; box-shadow: 0 4px 20px rgba(140,79,43,0.25); }
+  .header-text h1 { font-size: 22px; font-weight: 700; color: var(--text); letter-spacing: -0.3px; }
+  .header-meta { display: flex; gap: 8px; margin-top: 6px; flex-wrap: wrap; align-items: center; }
+  .badge { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 11px; letter-spacing: 0.3px; }
+  .badge-date { background: var(--accent-soft); border: 1px solid var(--line); color: var(--accent); }
+  .badge-count { background: rgba(140,79,43,0.06); border: 1px solid var(--line); color: var(--muted); }
+  .badge-source { background: transparent; color: var(--muted); font-size: 11px; padding: 0 4px; }
+  .summary-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; padding: 28px 32px; margin-bottom: 32px; box-shadow: 0 20px 60px rgba(61,36,15,0.06); animation: fadeUp 0.5s ease 0.1s both; }
+  .summary-card h2 { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.6px; color: var(--accent); margin-bottom: 16px; }
+  .summary-text { font-size: 15px; line-height: 1.8; color: var(--text); }
+  .section { margin-bottom: 36px; animation: fadeUp 0.5s ease both; }
+  .section-title { display: flex; align-items: center; gap: 10px; font-size: 17px; font-weight: 700; color: var(--text); margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+  .section-icon { width: 28px; height: 28px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; background: var(--accent-soft); }
+  .news-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; padding: 22px 26px; margin-bottom: 12px; box-shadow: 0 8px 30px rgba(61,36,15,0.04); transition: background 0.2s, border-color 0.2s, transform 0.2s; }
+  .news-card:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(61,36,15,0.08); }
+  .news-card.featured { border-left: 3px solid var(--accent); }
+  .news-card.featured:hover { border-color: var(--accent); }
+  .card-header { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+  .rank-badge { background: var(--accent); color: #fff7f0; font-weight: 700; font-size: 12px; padding: 2px 8px; border-radius: 6px; }
+  .emoji-icon { font-size: 18px; }
+  .card-header-row { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .emoji-sm { font-size: 14px; }
+  .news-card h3 { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 8px; line-height: 1.5; }
+  .journal-source { font-size: 12px; color: var(--accent); margin-bottom: 8px; opacity: 0.8; }
+  .news-card p { font-size: 13.5px; line-height: 1.75; color: var(--muted); }
+  .card-footer { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .tag { padding: 2px 9px; background: var(--accent-soft); border-radius: 999px; font-size: 11px; color: var(--accent); }
+  .news-card a { font-size: 12px; color: var(--accent); text-decoration: none; opacity: 0.7; margin-left: auto; }
+  .news-card a:hover { opacity: 1; }
+  .utility-high { color: #5a7a3a; font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(90,122,58,0.1); border-radius: 4px; }
+  .utility-mid { color: #9f7a2e; font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(159,122,46,0.1); border-radius: 4px; }
+  .utility-low { color: var(--muted); font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(118,100,83,0.08); border-radius: 4px; }
+  .utility-sm { font-size: 10px; }
+  .pico-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; padding: 12px; background: rgba(255,253,249,0.8); border-radius: 14px; border: 1px solid var(--line); }
+  .pico-item { display: flex; gap: 8px; align-items: baseline; }
+  .pico-label { font-size: 10px; font-weight: 700; color: #fff7f0; background: var(--accent); padding: 2px 6px; border-radius: 4px; flex-shrink: 0; }
+  .pico-text { font-size: 12px; color: var(--muted); line-height: 1.4; }
+  .keywords-section { margin-bottom: 36px; }
+  .keywords { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+  .keyword { padding: 5px 14px; background: var(--accent-soft); border: 1px solid var(--line); border-radius: 20px; font-size: 12px; color: var(--accent); cursor: default; transition: background 0.2s; }
+  .keyword:hover { background: rgba(140,79,43,0.18); }
+  .topic-section { margin-bottom: 36px; }
+  .topic-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+  .topic-name { font-size: 13px; color: var(--muted); width: 100px; flex-shrink: 0; text-align: right; }
+  .topic-bar-bg { flex: 1; height: 8px; background: var(--line); border-radius: 4px; overflow: hidden; }
+  .topic-bar { height: 100%; background: linear-gradient(90deg, var(--accent), #c47a4a); border-radius: 4px; transition: width 0.6s ease; }
+  .topic-count { font-size: 12px; color: var(--accent); width: 24px; }
+  .clinic-banner { margin-top: 48px; animation: fadeUp 0.5s ease 0.4s both; }
+  .clinic-link { display: flex; align-items: center; gap: 14px; padding: 18px 24px; background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; text-decoration: none; color: var(--text); transition: all 0.2s; box-shadow: 0 8px 30px rgba(61,36,15,0.04); }
+  .clinic-link:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(61,36,15,0.08); }
+  .clinic-icon { font-size: 28px; flex-shrink: 0; }
+  .clinic-name { font-size: 15px; font-weight: 700; color: var(--text); flex: 1; }
+  .clinic-desc { font-size: 12px; color: var(--muted); margin-top: 2px; }
+  .clinic-arrow { font-size: 18px; color: var(--accent); font-weight: 700; }
+  .links-grid { display: grid; grid-template-columns: 1fr; gap: 12px; margin-top: 48px; animation: fadeUp 0.5s ease 0.4s both; }
+  footer { margin-top: 32px; padding-top: 22px; border-top: 1px solid var(--line); font-size: 11.5px; color: var(--muted); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; animation: fadeUp 0.5s ease 0.5s both; }
+  footer a { color: var(--muted); text-decoration: none; }
+  footer a:hover { color: var(--accent); }
+  @keyframes fadeDown { from { opacity: 0; transform: translateY(-16px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+  @media (max-width: 600px) { .container { padding: 36px 18px 60px; } .summary-card, .news-card { padding: 20px 18px; } .pico-grid { grid-template-columns: 1fr; } footer { flex-direction: column; gap: 6px; text-align: center; } .topic-name { width: 70px; font-size: 11px; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="logo">🍷</div>
+    <div class="header-text">
+      <h1>Alcohol Addiction Research &middot; 酒癮研究文獻日報</h1>
+      <div class="header-meta">
+        <span class="badge badge-date">📅 2026年7月16日</span>
+        <span class="badge badge-count">📊 50 篇文獻</span>
+        <span class="badge badge-source">Powered by PubMed + Zhipu AI</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="summary-card">
+    <h2>📋 今日文獻趨勢</h2>
+    <p class="summary-text">今日文獻呈現三大亮點：腦神經調控技術（cTBS）的隨機對照試驗證實可降低AUD復發風險，GLP-1受體激動劑的大型登記研究提供其作為AUD輔助治療的真實世界證據，以及AUD神經生物學亞型的識別為精準醫療開闢新途徑。</p>
+  </div>
+
+  <div class='section'><div class='section-title'><span class='section-icon'>⭐</span>今日精選 TOP Picks</div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#1</span>
+            <span class="emoji-icon">🧠</span>
+            <span class="utility-mid">中實用性</span>
+          </div>
+          <h3>優化大腦功能-結構架構以降低酒精使用疾患復發：cTBS隨機對照試驗</h3>
+          <p class="journal-source">Molecular psychiatry &middot; Optimizing brain functional-structural architecture with cTBS to reduce relapse in alcohol use disorder: a randomized controlled trial.</p>
+          <p>針對右背外側前額葉的連續θ短陣刺激可顯著降低AUD患者一年內復發風險（HR=0.426），其機制涉及減少額頂葉網路至皮質下網路的控制能量，為非藥物腦刺激治療AUD提供首個隨機對照試驗證據。</p>
+          
+            <div class="pico-grid">
+              <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">18-60歲酒精使用疾患患者（N=50）</span></div>
+              <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">主動cTBS刺激右背外側前額葉皮質（為期2週，每日2次）</span></div>
+              <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">假刺激</span></div>
+              <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">一年內復發率、AUDIT評分變化、fMRI神經網路控制能量</span></div>
+            </div>
+          <div class="card-footer">
+            <span class="tag">臨床試驗</span><span class="tag">腦影像</span><span class="tag">神經科學</span><span class="tag">復發與渴求</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42457860/" target="_blank" rel="noopener noreferrer">閱讀原文 →</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#2</span>
+            <span class="emoji-icon">💊</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>GLP-1受體激動劑與酒精使用疾患及物質使用疾患相關住院的關聯：瑞典登記研究</h3>
+          <p class="journal-source">The lancet. Psychiatry &middot; Association of GLP-1 receptor agonists with alcohol use disorder-related and substance use disorder-related hospital admissions during treatment and after discontinuation: a Swedish register-based within-individual observational study.</p>
+          <p>使用GLP-1受體激動劑期間可降低AUD相關住院風險，但停藥後保護效應逐漸減弱，為GLP-1作為AUD輔助治療提供超過16萬人的真實世界證據。</p>
+          
+            <div class="pico-grid">
+              <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">瑞典斯德哥爾摩郡第二型糖尿病患者（N=167,026）</span></div>
+              <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">GLP-1受體激動劑使用期間</span></div>
+              <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">未使用期間、停藥後1-182天及183-364天、DPP-4抑制劑使用期間</span></div>
+              <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">AUD及SUD相關住院率</span></div>
+            </div>
+          <div class="card-footer">
+            <span class="tag">GLP-1</span><span class="tag">藥物治療</span><span class="tag">流行病學</span><span class="tag">酒精使用疾患</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42456704/" target="_blank" rel="noopener noreferrer">閱讀原文 →</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#3</span>
+            <span class="emoji-icon">🔬</span>
+            <span class="utility-mid">中實用性</span>
+          </div>
+          <h3>酒精使用疾患的神經生物學亞型及其表型與臨床特徵</h3>
+          <p class="journal-source">Molecular psychiatry &middot; Neurobiological subtypes in alcohol use disorder and their phenotypic and clinical profiles.</p>
+          <p>基於靜息態fMRI識別出兩種AUD神經生物學亞型：亞型1以感覺運動整合增強及外化行為為特徵，亞型2以額頂葉網路整合增強及內化行為為特徵，兩者與AUD症狀嚴重度無關但表型截然不同，有助於精準醫療發展。</p>
+          
+            <div class="pico-grid">
+              <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">人類連接體計畫中的AUD患者（N=668，含輕度109人、中重度38人）</span></div>
+              <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">無（觀察性研究，基於圖論指標的半監督聚類分析）</span></div>
+              <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">兩種神經生物學亞型之間比較</span></div>
+              <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">臨床表型特徵、外化/內化行為特徵、亞型穩定性與可重複性</span></div>
+            </div>
+          <div class="card-footer">
+            <span class="tag">腦影像</span><span class="tag">神經科學</span><span class="tag">酒精使用疾患</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42436260/" target="_blank" rel="noopener noreferrer">閱讀原文 →</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#4</span>
+            <span class="emoji-icon">🏥</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>手術患者術前酒精使用疾患管理的有效性：系統性回顧與統合分析</h3>
+          <p class="journal-source">Minerva anestesiologica &middot; Effectiveness of preoperative management of alcohol use disorders in surgical patients: a systematic review and meta-analysis.</p>
+          <p>術前AUD介入措施可顯著降低肝移植患者1年（RR=0.59）及5年以上（RR=0.53）的酒精復發率，強化術前戒酒介入對長期預後的重要性。</p>
+          
+            <div class="pico-grid">
+              <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">接受手術的AUD成人患者（N=2,602，21項研究）</span></div>
+              <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">術前AUD介入措施（主要為非藥物介入，少數為合併藥物介入）</span></div>
+              <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">無介入或常規照護</span></div>
+              <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">酒精復發率、術後併發症、住院天數、死亡率</span></div>
+            </div>
+          <div class="card-footer">
+            <span class="tag">系統性回顧</span><span class="tag">藥物治療</span><span class="tag">酒精使用疾患</span><span class="tag">復發與渴求</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42439192/" target="_blank" rel="noopener noreferrer">閱讀原文 →</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#5</span>
+            <span class="emoji-icon">👥</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>酒精使用疾患康復中行為改變的社會網絡機制：縱向觀察性隊列研究</h3>
+          <p class="journal-source">Journal of psychopathology and clinical science &middot; Social network mechanisms of behavior change in alcohol use disorder recovery: A longitudinal observational cohort study.</p>
+          <p>AUD康復者的社會網絡特徵可預測戒斷成功，家庭成員數量、互助組織成員數量及互動頻率為關鍵因素，且存在性別差異：女性受網絡成員重度飲酒影響更大，男性則受互助組織參與益處更明顯。</p>
+          
+            <div class="pico-grid">
+              <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">進行重大復發嘗試的AUD成人（N=501，追蹤1年，83%留存率）</span></div>
+              <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">無（觀察性研究）</span></div>
+              <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">不同社會網絡特徵（家庭成員數、互助組織成員數、互動頻率、網絡重度飲酒天數）比較</span></div>
+              <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">戒斷狀態、WHO飲酒程度下降、每週飲酒量下降</span></div>
+            </div>
+          <div class="card-footer">
+            <span class="tag">社會決定因素</span><span class="tag">復發與渴求</span><span class="tag">酒精使用疾患</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42423686/" target="_blank" rel="noopener noreferrer">閱讀原文 →</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#6</span>
+            <span class="emoji-icon">🦠</span>
+            <span class="utility-low">低實用性</span>
+          </div>
+          <h3>腸道菌相、腸道完整性與神經發炎在酒精使用疾患復發易感性中的角色</h3>
+          <p class="journal-source">Current neuropharmacology &middot; The Role of Microbiota, Gut Integrity, and Neuroinflammation in Relapse Vulnerability in Alcohol Use Disorder.</p>
+          <p>系統性整合腸腦軸機制如何透過腸道菌群失調、腸道通透性增加及神經免疫活化促進AUD復發，並提出以微生物群為基礎的介入策略（如特定菌株益生菌、糞菌移植、丁酸鹽衍生物）可能成為未來復發預防的新方向。</p>
+          
+            <div class="pico-grid">
+              <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">AUD患者（敘述性文獻回顧）</span></div>
+              <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">微生物群導向介入（特定益生菌、糞菌移植、後生元如丁酸鹽衍生物）</span></div>
+              <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">傳統治療或無介入</span></div>
+              <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">復發率、腸道通透性、神經發炎指標</span></div>
+            </div>
+          <div class="card-footer">
+            <span class="tag">腸道菌相</span><span class="tag">神經發炎</span><span class="tag">復發與渴求</span><span class="tag">系統性回顧</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42459086/" target="_blank" rel="noopener noreferrer">閱讀原文 →</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#7</span>
+            <span class="emoji-icon">📊</span>
+            <span class="utility-mid">中實用性</span>
+          </div>
+          <h3>美國酒精性肝病死亡率的國家趨勢與差異（1999-2024）</h3>
+          <p class="journal-source">Medicine &middot; National trends and disparities in alcoholic liver disease mortality, United States, 1999-2024.</p>
+          <p>美國ALD死亡率在過去25年持續上升，2018-2021年疫情期間加速增長，25-34歲年輕成人增幅最顯著，西語裔與非西語裔白人負擔較重，非都會郡上升幅度大於都會郡，酒精性肝硬化佔約80%的ALD死亡。</p>
+          
+            <div class="pico-grid">
+              <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">美國成人ALD死亡案例（1999-2024年CDC WONDER資料庫）</span></div>
+              <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">無（流行病學分析）</span></div>
+              <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">不同時間點、性別、年齡、種族、區域及城鄉分層比較</span></div>
+              <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">年齡調整死亡率、年度變化百分比（APC）、平均年度變化百分比（AAPC）</span></div>
+            </div>
+          <div class="card-footer">
+            <span class="tag">流行病學</span><span class="tag">肝臟疾病</span><span class="tag">政策與公共衛生</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42432953/" target="_blank" rel="noopener noreferrer">閱讀原文 →</a>
+          </div>
+        </div></div>
+  <div class='section'><div class='section-title'><span class='section-icon'>📚</span>其他值得關注的文獻</div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🌍</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>撒哈拉以南非洲耐多藥結核病病例的相關特徵：系統性回顧與統合分析</h3>
+          <p class="journal-source">BMC infectious diseases</p>
+          <p>AUD在撒哈拉以南非洲MDR-TB病例中佔48%，為重要的行為危險因子之一。</p>
+          <div class="card-footer">
+            <span class="tag">共病症</span><span class="tag">系統性回顧</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42458287/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🫁</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>脂肪性肝病的非侵入性評估與生物標記：MASLD、MetALD與ALD</h3>
+          <p class="journal-source">Clinical and molecular hepatology</p>
+          <p>回顧非侵入性檢測在MASLD、ALD及新定義的MetALD中的診斷表現與臨床應用角色。</p>
+          <div class="card-footer">
+            <span class="tag">肝臟疾病</span><span class="tag">篩檢與評估</span><span class="tag">系統性回顧</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42457161/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">⚗️</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>短期戒斷對酒精消除率的影響：性別差異與靜脈酒精鉗夾方法的比較</h3>
+          <p class="journal-source">Alcohol (Fayetteville, N.Y.)</p>
+          <p>短期戒斷後酒精消除率無一致變化，男性AER始終高於女性，短暫戒斷後飲酒增加的性別差異可能非代謝因素解釋。</p>
+          <div class="card-footer">
+            <span class="tag">酒精戒斷</span><span class="tag">神經科學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42456997/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧘</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>酒精使用疾患全人健康方法的範圍審查協議</h3>
+          <p class="journal-source">JMIR research protocols</p>
+          <p>此範圍審查協議旨在識別與特徵化目前用於AUD管理的全人健康介入措施及其療效。</p>
+          <div class="card-footer">
+            <span class="tag">心理治療</span><span class="tag">系統性回顧</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42456156/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🐒</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>酒精與高熱量飲食調節SIV感染中的免疫表型與代謝健康</h3>
+          <p class="journal-source">Function (Oxford, England)</p>
+          <p>在非人靈長類HIV模型中，慢性酗酒導致CD4+ T細胞計數下降、葡萄糖胰島素動力學受損及骨密度降低。</p>
+          <div class="card-footer">
+            <span class="tag">共病症</span><span class="tag">營養與代謝</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42448343/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🕐</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>伏隔核晨昏節律基因Bmal1與Per2為小鼠酒精飲用行為的負向調節因子</h3>
+          <p class="journal-source">Alcohol (Fayetteville, N.Y.)</p>
+          <p>伏隔核中Bmal1剔除增加兩性酒精消耗，Per2剔除僅增加雄性酒精消耗，顯示晨昏節律基因調控酒精行為存在性別差異。</p>
+          <div class="card-footer">
+            <span class="tag">神經科學</span><span class="tag">基因學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42447969/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">⚡</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>成癮獎勵迴路的重接線：物質使用障礙深腦刺激與病灶方法的系統性回顧</h3>
+          <p class="journal-source">Acta neurochirurgica</p>
+          <p>雙側伏隔核DBS對嚴重AUD有最明確的人體證據，唯一隨機延遲啟動試驗顯示18個月時戒斷天數增至74.2%、重度飲酒天數降至35.5%。</p>
+          <div class="card-footer">
+            <span class="tag">系統性回顧</span><span class="tag">神經科學</span><span class="tag">藥物治療</span><span class="tag">酒精使用疾患</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42446584/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">😔</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>酒精使用疾患與藥物治療：羞恥感有什麼關係？</h3>
+          <p class="journal-source">The primary care companion for CNS disorders</p>
+          <p>探討羞恥感如何影響AUD患者接受藥物治療的意願與 adherence（摘要未提供）。</p>
+          <div class="card-footer">
+            <span class="tag">藥物治療</span><span class="tag">心理治療</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42446426/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">⚠️</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>高收入國家加害者酒精使用與親密伴侶暴力：系統性回顧與統合分析</h3>
+          <p class="journal-source">Addiction (Abingdon, England)</p>
+          <p>有害酒精使用與男對女（OR=1.41）及女對男（OR=1.15）親密伴侶暴力顯著相關，AUD或依賴的相關性最強。</p>
+          <div class="card-footer">
+            <span class="tag">系統性回顧</span><span class="tag">酒精使用疾患</span><span class="tag">共病症</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42443127/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🚗</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>喀麥隆交通事故傷患自報酒精使用與呼氣分析器結果的差異</h3>
+          <p class="journal-source">Addiction (Abingdon, England)</p>
+          <p>自報酒精使用靈敏度84.3%但陽性預測值僅46.5%，報告1-2杯者中73.1%呼氣分析陰性，男性、單身、周末受傷為BAC陽性預測因子。</p>
+          <div class="card-footer">
+            <span class="tag">篩檢與評估</span><span class="tag">酒精使用疾患</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42443067/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🚶</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>酒精使用疾患的步態功能障礙：臨床病例</h3>
+          <p class="journal-source">American journal of physical medicine &amp; rehabilitation</p>
+          <p>臨床病例報告，探討AUD患者的步態功能障礙表現（摘要未提供）。</p>
+          <div class="card-footer">
+            <span class="tag">酒精使用疾患</span><span class="tag">共病症</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42442933/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🇨🇦</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>加拿大高風險飲酒與酒精使用疾患篩檢建議更新</h3>
+          <p class="journal-source">CMAJ : Canadian Medical Association journal</p>
+          <p>加拿大ICRIS更新2023年國家臨床實務指引中關於高風險飲酒與AUD篩檢的建議，反映最新酒精健康風險指引。</p>
+          <div class="card-footer">
+            <span class="tag">篩檢與評估</span><span class="tag">政策與公共衛生</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42442794/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">📈</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>2016-2023年美國商業保險成人酒精使用疾患診斷趨勢：按身心障礙狀態與性別分析</h3>
+          <p class="journal-source">Drug and alcohol dependence reports</p>
+          <p>AUD診斷率從2016年85/萬人穩定上升至2023年128/萬人，身心障礙者AUD診斷率超過非障礙者3倍以上，嚴重精神疾病者更高出10倍。</p>
+          <div class="card-footer">
+            <span class="tag">流行病學</span><span class="tag">酒精使用疾患</span><span class="tag">共病症</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42440433/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">💉</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>先前使用Semaglutide與限制飲食患者發生嚴重術後乳酸酸中毒與高血糖對Thiamine的反應：病例報告</h3>
+          <p class="journal-source">A&amp;A practice</p>
+          <p>一名年輕女性使用Semaglutide合併限制飲食後，術後發生嚴重乳酸酸中毒，靜脈Thiamine治療後迅速改善，提醒術前營養評估的重要性。</p>
+          <div class="card-footer">
+            <span class="tag">營養與代謝</span><span class="tag">GLP-1</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42439433/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">💻</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>整合接納承諾療法與行為活化之網路自助計畫對少數族群年輕成人AUD的開發與可用性測試</h3>
+          <p class="journal-source">Digital health</p>
+          <p>針對少數族群年輕成人AUD開發的ACT-BA網路自助計畫可用性評分74.72分，88.9%參與者認為有幫助且易於導航，未來需加入戒斷症狀管理。</p>
+          <div class="card-footer">
+            <span class="tag">心理治療</span><span class="tag">認知行為治療</span><span class="tag">青少年</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42436894/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🦴</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>術前髖外展肌CT衰減值降低與全髖關節置換術早期脫位的相關性</h3>
+          <p class="journal-source">Orthopaedics &amp; traumatology, surgery &amp; research : OTSR</p>
+          <p>術前臀中肌與臀小肌CT衰減值較低與THA後2年內脫位顯著相關，AUD為排除條件之一。</p>
+          <div class="card-footer">
+            <span class="tag">共病症</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42435848/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🎓</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>早發與晚發大腸直腸癌的風險因素比較：病例-病例對照研究</h3>
+          <p class="journal-source">Cancer causes &amp; control : CCC</p>
+          <p>早發大腸直腸癌與青少年/二十歲期間酒精消耗（OR=2.47）、 binge drinking（OR=3.15）顯著相關。</p>
+          <div class="card-footer">
+            <span class="tag">共病症</span><span class="tag">流行病學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42435229/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🦠</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>社會決定因素與全關節置換術前MRSA帶菌的相關性</h3>
+          <p class="journal-source">Arthroplasty today</p>
+          <p>社會劣勢與關節置換術前MRSA帶菌風險增加相關，酒精濫用亦為危險因子之一。</p>
+          <div class="card-footer">
+            <span class="tag">社會決定因素</span><span class="tag">共病症</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42434293/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🇯🇵</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>日本勞動年齡成人心理困擾與飲酒模式：基於人口的分析</h3>
+          <p class="journal-source">BMC public health</p>
+          <p>在調整社會人口學與行為共變量後，心理困擾與重度飲酒無顯著相關，與自我用藥假說不一致。</p>
+          <div class="card-footer">
+            <span class="tag">流行病學</span><span class="tag">憂鬱症</span><span class="tag">酒精使用疾患</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42432591/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧬</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>闡明自殺企圖與酒精使用疾患聚合遺傳風險的心理社會結果特徵</h3>
+          <p class="journal-source">Translational psychiatry</p>
+          <p>同時具有高AUD與自殺企圖遺傳風險者與最負面的心理社會結果相關，僅高自殺企圖風險但低AUD風險者結果較佳，顯示AUD遺傳負荷可能具保護作用。</p>
+          <div class="card-footer">
+            <span class="tag">基因學</span><span class="tag">共病症</span><span class="tag">憂鬱症</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42431905/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧬</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>社交焦慮障礙多基因風險評分與亞表型的探討</h3>
+          <p class="journal-source">Translational psychiatry</p>
+          <p>社交焦慮障礙與憂鬱症、焦慮症、精神分裂症等多種精神疾病的PRS顯著相關，但與酒精依賴PRS無顯著關聯。</p>
+          <div class="card-footer">
+            <span class="tag">基因學</span><span class="tag">焦慮症</span><span class="tag">共病症</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42431851/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🏋️</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>阻力訓練不改變自願酒精消耗但在慢性酒精暴露與戒斷期間差異性調節焦慮樣行為</h3>
+          <p class="journal-source">Pharmacology, biochemistry, and behavior</p>
+          <p>阻力訓練未改變大鼠酒精消耗量，但在酒精暴露期間增加焦慮樣行為，戒斷期間則無顯著影響。</p>
+          <div class="card-footer">
+            <span class="tag">神經科學</span><span class="tag">焦慮症</span><span class="tag">酒精戒斷</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42431466/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🍽️</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>食物對Disulfiram代謝物藥代動力學影響的隨機研究</h3>
+          <p class="journal-source">European journal of drug metabolism and pharmacokinetics</p>
+          <p>高脂餐後服用Disulfiram顯著增加代謝物Me-DDC（約100%）與Me-DTC（約50%）的暴露量，劑量與AUC呈比例關係。</p>
+          <div class="card-footer">
+            <span class="tag">藥物治療</span><span class="tag">營養與代謝</span><span class="tag">臨床試驗</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42429921/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🤖</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>酒精成癮的分數階建模：最佳控制分析與深度神經網路模擬</h3>
+          <p class="journal-source">Cognitive neurodynamics</p>
+          <p>使用Caputo分數導數建立酒精成癮動態模型，探討記憶與遺傳效應，並開發深度神經網路代理模型進行數值模擬。</p>
+          <div class="card-footer">
+            <span class="tag">神經科學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42428046/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🎖️</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>退伍軍人對酒精使用及酒精戒斷症候群治療與後續AUD照護的觀點：質性研究</h3>
+          <p class="journal-source">Journal of behavioral medicine</p>
+          <p>鄉村退伍軍人AUD照護障礙包括醫院分布不均、過早出院、歧視與污名化、住院復健計畫不足，促進因素包括臨床人員支持與同儕支持。</p>
+          <div class="card-footer">
+            <span class="tag">社會決定因素</span><span class="tag">酒精戒斷</span><span class="tag">酒精使用疾患</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42426355/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧪</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>背側紋狀體DNMT3b在戒斷後酒精尋求行為中的作用</h3>
+          <p class="journal-source">Neuroscience letters</p>
+          <p>長期戒斷後背側紋狀體DNMT3b表達選擇性上調，剔除DNMT3b可顯著抑制酒精尋求行為，為復發治療提供潛在分子標靶。</p>
+          <div class="card-footer">
+            <span class="tag">神經科學</span><span class="tag">表觀遺傳學</span><span class="tag">復發與渴求</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42425436/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🏘️</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>居住地塑造糖尿病風險：美國東南中部地區第二型糖尿病的多層次決定因素</h3>
+          <p class="journal-source">Journal of racial and ethnic health disparities</p>
+          <p>Binge drinking為第二型糖尿病郡盛行率的重要預測因子之一，與肥胖存在交互作用。</p>
+          <div class="card-footer">
+            <span class="tag">社會決定因素</span><span class="tag">營養與代謝</span><span class="tag">共病症</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42424017/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🇳🇦</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>納米比亞工作與街頭兒童青少年成為街頭連結者的社會生態因素</h3>
+          <p class="journal-source">Global public health</p>
+          <p>父母酒精濫用為納米比亞兒童青少年流落街頭的危險因子之一，家庭貧困與虐待為主要驅動因素。</p>
+          <div class="card-footer">
+            <span class="tag">社會決定因素</span><span class="tag">青少年</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42423336/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">💑</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>數位OurRelationship計畫對困擾伴侶的經濟成本與效益</h3>
+          <p class="journal-source">Family process</p>
+          <p>數位伴侶關係介入每投入1美元可節省6.60美元社會成本，效益涵蓋憂鬱症、焦慮症、酒精濫用與失眠四個領域。</p>
+          <div class="card-footer">
+            <span class="tag">家庭治療</span><span class="tag">政策與公共衛生</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42423209/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🌿</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>整合UPLC-QE Orbitrap-MS/MS、網路藥理學與實驗驗證探討越鞠丸治療ALD的機制</h3>
+          <p class="journal-source">Biomedical chromatography : BMC</p>
+          <p>越鞠丸透過HIF-1訊號路徑等多重途徑改善酒精性肝病小鼠肝臟脂質沉積與腸道屏障完整性。</p>
+          <div class="card-footer">
+            <span class="tag">肝臟疾病</span><span class="tag">腸道菌相</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42423000/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">💊</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>非吸收性抗生素加劇胃酸抑制小鼠的酒精性肝病</h3>
+          <p class="journal-source">Gut microbes</p>
+          <p>PPI合併非吸收性抗生素在胃酸抑制狀態下透過促進產細胞毒素腸球菌擴增而加劇ALD，PPI使用與酒精性肝炎患者30天死亡率增加相關。</p>
+          <div class="card-footer">
+            <span class="tag">肝臟疾病</span><span class="tag">腸道菌相</span><span class="tag">藥物治療</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42421214/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🩺</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>衣索比亞西北部醫院高血壓患者酒精使用疾患盛行率及其與降壓藥物遵醫囑性的關聯</h3>
+          <p class="journal-source">Annals of medicine</p>
+          <p>高血壓門診患者AUD盛行率12.2%，酒精依賴與降壓藥物不遵醫囑風險增加近4倍相關，支持將酒精篩檢整合至高血壓常規照護。</p>
+          <div class="card-footer">
+            <span class="tag">篩檢與評估</span><span class="tag">酒精使用疾患</span><span class="tag">共病症</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42411344/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🌈</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>針對性與性別少數族群成人危險飲酒與創傷後壓力症狀的簡短跨診斷認知行為治療與表達性書寫：先導試驗協議</h3>
+          <p class="journal-source">Contemporary clinical trials communications</p>
+          <p>RISE計畫結合統合協定模組與暴露式表達性書寫，為創傷暴露的SMW/TGD族群發展文化回應性遠距醫療介入。</p>
+          <div class="card-footer">
+            <span class="tag">認知行為治療</span><span class="tag">PTSD</span><span class="tag">青少年</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42404370/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">口罩</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>COVID-19公共衛生緊急狀態前後社區診所患者酒精使用疾患與憂鬱症：按吸菸狀態分析</h3>
+          <p class="journal-source">AJPM focus</p>
+          <p>COVID-19期間AUD與憂鬱症診斷率均上升，吸菸者增加幅度更大，男性AUD診斷增加最多，女性憂鬱症診斷增加最多。</p>
+          <div class="card-footer">
+            <span class="tag">流行病學</span><span class="tag">憂鬱症</span><span class="tag">酒精使用疾患</span><span class="tag">共病症</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42389184/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">⚖️</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>司法AUD患者的線索誘發抑制控制：與因子2精神病態的刑事再犯風險連結</h3>
+          <p class="journal-source">Addictive behaviors reports</p>
+          <p>AUD司法病患在酒精線索下的抑制控制缺陷與PCL:SV因子2分數顯著相關（β=-0.79），顯示情境特異性的認知機制連結物質使用與再犯風險。</p>
+          <div class="card-footer">
+            <span class="tag">神經科學</span><span class="tag">復發與渴求</span><span class="tag">酒精使用疾患</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42383258/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🩹</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>酒精使用疾患合併胃繞道患者的皰疹性糙皮病</h3>
+          <p class="journal-source">JAAD case reports</p>
+          <p>病例報告，描述AUD合併胃繞道患者發生皰疹性糙皮病（摘要未提供）。</p>
+          <div class="card-footer">
+            <span class="tag">營養與代謝</span><span class="tag">共病症</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42381827/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🇫🇷</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>法國成人終身性暴力與菸草、酒精及大麻使用：全國調查</h3>
+          <p class="journal-source">Preventive medicine reports</p>
+          <p>9.5%女性與2%男性報告終身性暴力經歷，與所有五種物質使用結果（每日吸菸、重度飲酒、regular binge drinking、每月大麻使用、問題性大麻使用）顯著相關。</p>
+          <div class="card-footer">
+            <span class="tag">流行病學</span><span class="tag">酒精使用疾患</span><span class="tag">共病症</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42375164/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧬</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>壓力相關基因多態性與壓力生活事件與巴西族群酒精使用疾患的關聯</h3>
+          <p class="journal-source">Stress and health : journal of the International Society for the Investigation of Stress</p>
+          <p>CRHR2兩個變異體（rs8175360增加風險、rs41417745降低風險）與AUD顯著相關，且與生命歷程壓力事件存在交互作用。</p>
+          <div class="card-footer">
+            <span class="tag">基因學</span><span class="tag">酒精使用疾患</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42375127/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧠</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>Tau蛋白轉譯後修飾與Tau病理的分子與環境驅動因子</h3>
+          <p class="journal-source">Ageing research reviews</p>
+          <p>酒精濫用為促進Tau蛋白轉譯後修飾與病理形成的环境因素之一。</p>
+          <div class="card-footer">
+            <span class="tag">神經科學</span><span class="tag">共病症</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42372976/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">↔️</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>治療狀態是否重要？AUD患者每日趨向與迴避傾向預測飲酒行為的檢視</h3>
+          <p class="journal-source">Drug and alcohol dependence</p>
+          <p>未接受治療時趨向傾向增加飲酒可能性，接受治療時迴避傾向可削弱趨向傾向的影響，支持渴求的矛盾模型與多維度評估框架。</p>
+          <div class="card-footer">
+            <span class="tag">復發與渴求</span><span class="tag">心理治療</span><span class="tag">酒精使用疾患</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42335742/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🌳</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>識別美國青少年大麻與菸草並用分類器的隨機森林方法</h3>
+          <p class="journal-source">Drug and alcohol dependence</p>
+          <p>過去30天酒精使用為美國青少年大麻與菸草並用最強分類器，其次是性行為與 binge drinking。</p>
+          <div class="card-footer">
+            <span class="tag">青少年</span><span class="tag">酒精使用疾患</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42335740/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🚫</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>鼻內催產素治療酒精使用疾患：隨機臨床試驗資料的多層次、貝氏與變異性統合分析</h3>
+          <p class="journal-source">Psychoneuroendocrinology</p>
+          <p>六項RCT的統合分析顯示鼻內催產素對AUD無顯著整體療效（Hedges&#39; g=0.34, p=0.47），貝氏分析提供中等支持虛無假說的證據（BF01=4.74）。</p>
+          <div class="card-footer">
+            <span class="tag">藥物治療</span><span class="tag">系統性回顧</span><span class="tag">臨床試驗</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42335670/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">❤️</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>酒精性肝炎合併心房顫動導致死亡率增加</h3>
+          <p class="journal-source">European journal of gastroenterology &amp; hepatology</p>
+          <p>酒精性肝炎合併心房顫動患者住院死亡率幾乎為未合併者的兩倍（6.9% vs 3.9%），合併肝硬化者死亡率更高達11.3%。</p>
+          <div class="card-footer">
+            <span class="tag">肝臟疾病</span><span class="tag">共病症</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42335427/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div></div>
+  <div class='topic-section section'><div class='section-title'><span class='section-icon'>📊</span>主題分佈</div>
+            <div class="topic-row">
+              <span class="topic-name">酒精使用疾患</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:100%"></div></div>
+              <span class="topic-count">18</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">神經科學</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:44%"></div></div>
+              <span class="topic-count">8</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">流行病學</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:39%"></div></div>
+              <span class="topic-count">7</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">藥物治療</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:33%"></div></div>
+              <span class="topic-count">6</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">共病症</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:56%"></div></div>
+              <span class="topic-count">10</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">復發與渴求</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:28%"></div></div>
+              <span class="topic-count">5</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">社會決定因素</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:22%"></div></div>
+              <span class="topic-count">4</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">肝臟疾病</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:28%"></div></div>
+              <span class="topic-count">5</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">系統性回顧</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:28%"></div></div>
+              <span class="topic-count">5</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">腦影像</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:11%"></div></div>
+              <span class="topic-count">2</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">腸道菌相</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:17%"></div></div>
+              <span class="topic-count">3</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">GLP-1</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:11%"></div></div>
+              <span class="topic-count">2</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">神經發炎</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:6%"></div></div>
+              <span class="topic-count">1</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">篩檢與評估</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:22%"></div></div>
+              <span class="topic-count">4</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">基因學</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:22%"></div></div>
+              <span class="topic-count">4</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">心理治療</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:17%"></div></div>
+              <span class="topic-count">3</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">認知行為治療</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:11%"></div></div>
+              <span class="topic-count">2</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">青少年</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:17%"></div></div>
+              <span class="topic-count">3</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">營養與代謝</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:22%"></div></div>
+              <span class="topic-count">4</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">臨床試驗</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:22%"></div></div>
+              <span class="topic-count">4</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">酒精戒斷</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:17%"></div></div>
+              <span class="topic-count">3</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">憂鬱症</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:17%"></div></div>
+              <span class="topic-count">3</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">焦慮症</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:11%"></div></div>
+              <span class="topic-count">2</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">PTSD</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:6%"></div></div>
+              <span class="topic-count">1</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">表觀遺傳學</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:6%"></div></div>
+              <span class="topic-count">1</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">家庭治療</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:6%"></div></div>
+              <span class="topic-count">1</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">政策與公共衛生</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:17%"></div></div>
+              <span class="topic-count">3</span>
+            </div></div>
+  <div class='keywords-section section'><div class='section-title'><span class='section-icon'>🏷️</span>關鍵字</div><div class='keywords'><span class="keyword">cTBS腦刺激</span><span class="keyword">GLP-1受體激動劑</span><span class="keyword">神經生物學亞型</span><span class="keyword">腸腦軸</span><span class="keyword">術前戒酒介入</span><span class="keyword">社會網絡</span><span class="keyword">酒精性肝病死亡率</span></div></div>
+
+  <div class="links-grid">
+    <a href="https://www.leepsyclinic.com/" class="clinic-link" target="_blank" rel="noopener noreferrer">
+      <span class="clinic-icon">🏥</span>
+      <div>
+        <div class="clinic-name">李政洋身心診所首頁</div>
+        <div class="clinic-desc">www.leepsyclinic.com</div>
+      </div>
+      <span class="clinic-arrow">→</span>
+    </a>
+    <a href="https://blog.leepsyclinic.com/" class="clinic-link" target="_blank" rel="noopener noreferrer">
+      <span class="clinic-icon">📬</span>
+      <div>
+        <div class="clinic-name">訂閱電子報</div>
+        <div class="clinic-desc">blog.leepsyclinic.com</div>
+      </div>
+      <span class="clinic-arrow">→</span>
+    </a>
+    <a href="https://buymeacoffee.com/CYlee" class="clinic-link" target="_blank" rel="noopener noreferrer">
+      <span class="clinic-icon">☕</span>
+      <div>
+        <div class="clinic-name">Buy Me a Coffee</div>
+        <div class="clinic-desc">buymeacoffee.com/CYlee</div>
+      </div>
+      <span class="clinic-arrow">→</span>
+    </a>
+  </div>
+
+  <footer>
+    <span>資料來源：PubMed &middot; 分析模型：glm-5-turbo</span>
+    <span><a href="https://github.com/u8901006/alcohol-addiction">GitHub</a></span>
+  </footer>
+</div>
+</body>
+</html>
