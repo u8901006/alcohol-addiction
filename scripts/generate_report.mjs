@@ -6,11 +6,10 @@ import { fileURLToPath } from 'node:url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, '..');
 
-const API_BASE = process.env.ZHIPU_API_BASE || 'https://open.bigmodel.cn/api/coding/paas/v4';
+const API_BASE = 'https://integrate.api.nvidia.com/v1';
 const MODELS = [
-  process.env.ZHIPU_MODEL_PRIMARY || 'glm-5-turbo',
-  'glm-4.7',
-  'glm-4.7-flash',
+  'nvidia/nemotron-3-super-120b-a12b',
+  'nvidia/nemotron-3-nano-30b-a3b',
 ];
 
 const SYSTEM_PROMPT = `你是酒精成癮（Alcohol Use Disorder）領域的資深研究員與科學傳播者。你的任務是：
@@ -159,13 +158,15 @@ function safeParseJSON(text) {
   return null;
 }
 
-async function callZhipuAPI(apiKey, model, messages, maxRetries = 3) {
+async function callNvidiaAPI(apiKey, model, messages, maxRetries = 3) {
   const payload = {
     model,
     messages,
-    temperature: 0.3,
-    top_p: 0.9,
-    max_tokens: model.includes('5-turbo') ? 16384 : 50000,
+    temperature: 1.0,
+    top_p: 0.95,
+    max_tokens: 16384,
+    stream: false,
+    chat_template_kwargs: { enable_thinking: false },
   };
 
   for (let attempt = 1; attempt <= maxRetries; attempt++) {
@@ -244,7 +245,7 @@ async function analyzePapers(apiKey, papersData) {
 
   for (const model of MODELS) {
     console.error(`[INFO] === Trying model: ${model} ===`);
-    const result = await callZhipuAPI(apiKey, model, messages);
+    const result = await callNvidiaAPI(apiKey, model, messages);
     if (result) {
       console.error(`[INFO] Analysis complete with ${model}: ${result.top_picks?.length || 0} top picks, ${result.all_papers?.length || 0} total`);
       result._model = model;
@@ -435,7 +436,7 @@ function generateHtml(analysis) {
       <div class="header-meta">
         <span class="badge badge-date">📅 ${dateDisplay}</span>
         <span class="badge badge-count">📊 ${totalCount} 篇文獻</span>
-        <span class="badge badge-source">Powered by PubMed + Zhipu AI</span>
+        <span class="badge badge-source">Powered by PubMed + NVIDIA AI</span>
       </div>
     </div>
   </header>
@@ -501,9 +502,9 @@ function parseArgs() {
 
 async function main() {
   const opts = parseArgs();
-  const apiKey = process.env.ZHIPU_API_KEY;
+  const apiKey = process.env.NVIDIA_API_KEY;
   if (!apiKey) {
-    console.error('[ERROR] ZHIPU_API_KEY environment variable is required');
+    console.error('[ERROR] NVIDIA_API_KEY environment variable is required');
     process.exit(1);
   }
 
