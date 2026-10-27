@@ -8,8 +8,8 @@ const ROOT = resolve(__dirname, '..');
 
 const API_BASE = 'https://integrate.api.nvidia.com/v1';
 const MODELS = [
-  'nvidia/nemotron-3-super-120b-a12b',
-  'nvidia/nemotron-3-nano-30b-a3b',
+  'nvidia/nemotron-3-ultra-550b-a55b',
+  'nvidia/nemotron-3-ultra-550b-a55b',
 ];
 
 const SYSTEM_PROMPT = `你是酒精成癮（Alcohol Use Disorder）領域的資深研究員與科學傳播者。你的任務是：
