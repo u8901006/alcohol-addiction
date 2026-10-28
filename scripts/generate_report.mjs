@@ -7,10 +7,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, '..');
 
 const API_BASE = 'https://integrate.api.nvidia.com/v1';
-const MODELS = [
-  'nvidia/nemotron-3-ultra-550b-a55b',
-  'nvidia/nemotron-3-ultra-550b-a55b',
-];
+const MODELS = (process.env.NVIDIA_MODELS || "nvidia/nemotron-3.5-lightning-30b-a3b,deepseek-ai/deepseek-v4.1-flash").split(",").map(s => s.trim()).filter(Boolean);
 
 const SYSTEM_PROMPT = `你是酒精成癮（Alcohol Use Disorder）領域的資深研究員與科學傳播者。你的任務是：
 1. 從提供的醫學文獻中，篩選出最具臨床意義與研究價值的論文
